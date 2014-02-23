@@ -1,0 +1,5 @@
+#!/bin/sh
+
+exec /usr/bin/umurmurd -d -c /etc/umurmur/umurmur.conf -t && \
+    /usr/bin/umurmurd -d -r -c /etc/umurmur/umurmur.conf 2>&1
+
